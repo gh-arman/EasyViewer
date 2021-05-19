@@ -1,0 +1,25 @@
+Base Exception Type: NetworkCommsDotNet.ConnectionSetupException: Error during TCP connection establish with destination ([TCP-E-S] 0.0.0.0:0 -> 192.168.90.21:9999). Destination may not be listening or connect timed out. System.Net.Sockets.SocketException (0x80004005): No connection could be made because the target machine actively refused it 192.168.90.21:9999
+   at System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   at System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.ConnectSocket()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.ConnectSocket()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.NetworkComms.SendObject[sendObjectType](String packetTypeStr, String destinationIPAddress, Int32 destinationPort, sendObjectType sendObject)
+   at EW1_0.Form1.Sender(Bitmap[] Clones, Point[] Points) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 187
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 68
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 141
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at NetworkCommsDotNet.Connections.TCP.TCPConnection.ConnectSocket()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.EstablishConnectionSpecific()
+   at NetworkCommsDotNet.Connections.Connection.EstablishConnection()
+   at NetworkCommsDotNet.Connections.TCP.TCPConnection.GetConnection(ConnectionInfo connectionInfo, SendReceiveOptions defaultSendReceiveOptions, TcpClient tcpClient, Boolean establishIfRequired, SSLOptions sslOptions)
+   at NetworkCommsDotNet.NetworkComms.SendObject[sendObjectType](String packetTypeStr, String destinationIPAddress, Int32 destinationPort, sendObjectType sendObject)
+   at EW1_0.Form1.Sender(Bitmap[] Clones, Point[] Points) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 187
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 68
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 141
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)

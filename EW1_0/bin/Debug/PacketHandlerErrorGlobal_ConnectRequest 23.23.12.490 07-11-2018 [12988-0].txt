@@ -1,0 +1,16 @@
+Base Exception Type: System.ComponentModel.Win32Exception (0x80004005): The handle is invalid
+   at System.Drawing.Graphics.CopyFromScreen(Int32 sourceX, Int32 sourceY, Int32 destinationX, Int32 destinationY, Size blockRegionSize, CopyPixelOperation copyPixelOperation)
+   at System.Drawing.Graphics.CopyFromScreen(Point upperLeftSource, Point upperLeftDestination, Size blockRegionSize)
+   at EW1_0.IP.TakeScreenShot(Bitmap ScreenBitmap) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\IP.cs:line 47
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 63
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 142
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at System.Drawing.Graphics.CopyFromScreen(Int32 sourceX, Int32 sourceY, Int32 destinationX, Int32 destinationY, Size blockRegionSize, CopyPixelOperation copyPixelOperation)
+   at System.Drawing.Graphics.CopyFromScreen(Point upperLeftSource, Point upperLeftDestination, Size blockRegionSize)
+   at EW1_0.IP.TakeScreenShot(Bitmap ScreenBitmap) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\IP.cs:line 47
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 63
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 142
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)

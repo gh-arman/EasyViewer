@@ -1,0 +1,12 @@
+Base Exception Type: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at EW1_0.Form1.Sender(MemoryStream Clones, Point[] Points) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 182
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 69
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 142
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)
+
+Stack Trace:    at EW1_0.Form1.Sender(MemoryStream Clones, Point[] Points) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 182
+   at EW1_0.Form1.StartTimer() in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 69
+   at EW1_0.Form1.Validation(PacketHeader header, Connection connection, String Anss) in E:\Easy Viewer\EW 1.0\EW1_0\EW1_0\Form1.cs:line 142
+   at NetworkCommsDotNet.Tools.PacketTypeHandlerDelegateWrapper`1.Process(PacketHeader packetHeader, Connection connection, Object obj)
+   at NetworkCommsDotNet.NetworkComms.TriggerGlobalPacketHandlers(PacketHeader packetHeader, Connection connection, Object returnObject, Boolean ignoreUnknownPacketTypeOverride)
